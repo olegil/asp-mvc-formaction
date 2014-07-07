@@ -1,0 +1,12 @@
+﻿@model FormAction.Models.LoginModel
+
+<h2>Three</h2>
+
+@if (Model != null && !String.IsNullOrEmpty(Model.Username))
+{
+    <h2>Hi, @Model.Username</h2>
+}
+else
+{
+    <h2>No user</h2>
+}
